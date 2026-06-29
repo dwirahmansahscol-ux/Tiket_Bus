@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hubungi Kami - Tiket Bus t</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo"><h2>Tiket Bus </h2></div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Beranda</a></li>
+                <li class="nav-item"><a href="tentang.html" class="nav-link">Tentang</a></li>
+                <li class="nav-item"><a href="katalog.html" class="nav-link">Katalog</a></li>
+                <li class="nav-item"><a href="bayar.html" class="nav-link">Bayar</a></li>
+                <li class="nav-item"><a href="kontak.html" class="nav-link active">Kontak</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+   <main class="section">
+        <!-- Wrapper Utama Kontak menggunakan Flexbox (Kiri Gambar, Kanan Form) -->
+        <div class="kontak-wrapper" style="display: flex; flex-wrap: wrap; gap: 2.5rem; max-width: 1100px; margin: 0 auto; align-items: stretch; margin-bottom: 3rem;">
+            
+            <!-- BAGIAN KIRI: Gambar Pendukung Layanan Pelanggan -->
+            <div class="kontak-image-box" style="flex: 1; min-width: 320px; display: flex; justify-content: center; align-items: center;">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgXL15OO0XbCUMBkKKjNb-_UO2EMutPyQsiJTaqlP532ivzKeiPw1cg5I7e6N2E-QsHFC7mNTKmwud25RjHVZtgI4PTpT6nXY_rtCCARyVkj0Z0uXN-ffIM8Q4_imtmEIHRb9BUsca4O90/s1600/KESULITAN+TRANSAKSI_SOSMED%2528800x800%2529.jpg" 
+                     alt="[Layanan Pelanggan BusTicket]" 
+                     style="width: 100%; height: 100%; min-height: 420px; max-height: 520px; object-fit: cover; border-radius: 1rem; box-shadow: 0 10px 25px rgba(0,0,0,0.08);">
+            </div>
+
+            <!-- BAGIAN KANAN: Formulir Hubungi Layanan Pengguna -->
+            <div class="card" style="flex: 1; min-width: 320px; padding: 2.5rem; background: white; border-radius: 1rem; box-shadow: 0 4px 15px rgba(0,0,0,0.05); margin-top: 0; display: flex; flex-direction: column; justify-content: center;">
+                <h2 style="font-size: 1.75rem; font-weight: 800; margin-bottom: 0.75rem; text-align: center; color: #0f172a;">Hubungi Layanan Pengguna</h2>
+                <p style="text-align: center; margin-bottom: 2rem; color: #64748b; font-size: 0.9rem; line-height: 1.5;">
+                    Ada kendala atau pertanyaan? Kirim pesan kepada kami. Tim kami akan merespons pesan Anda secepatnya.
+                </p>
+
+                <!-- Pastikan form membungkus input, textarea, DAN tombol submit di dalamnya -->
+                <form action="#" method="POST" onsubmit="alert('Pesan Anda telah terkirim. Terima kasih!'); return false;">
+                    
+                    <!-- Form Group: Nama -->
+                    <div class="form-group" style="margin-bottom: 1.25rem; display: flex; flex-direction: column;">
+                        <label for="nama-kontak" style="display: block; margin-bottom: 0.5rem; font-weight: bold; font-size: 0.85rem; color: #0f172a; text-align: left;">Nama</label>
+                        <input type="text" id="nama-kontak" required class="form-input" style="width: 100%; padding: 0.75rem; border: 1px solid #e2e8f0; border-radius: 6px; font-size: 0.9rem; outline: none;" placeholder="Nama lengkap Anda">
+                    </div>
+                    
+                    <!-- Form Group: Isi Pesan -->
+                    <div class="form-group" style="margin-bottom: 1.75rem; display: flex; flex-direction: column;">
+                        <label for="pesan" style="display: block; margin-bottom: 0.5rem; font-weight: bold; font-size: 0.85rem; color: #0f172a; text-align: left;">Isi Pesan</label>
+                        <textarea id="pesan" rows="5" required class="form-input" style="width: 100%; padding: 0.75rem; border: 1px solid #e2e8f0; border-radius: 6px; font-size: 0.9rem; outline: none; resize: none; font-family: inherit;" placeholder="Tuliskan pertanyaan atau keluhan Anda di sini..."></textarea>
+                    </div>
+
+                    <!-- Tombol Kirim yang Diposisikan di Dalam Tag Form -->
+                    <button type="submit" class="btn" style="width: 100%; background-color: #10b981; color: white; padding: 0.9rem; border-radius: 6px; font-weight: bold; border: none; cursor: pointer; font-size: 0.95rem; display: block; text-align: center; transition: background-color 0.2s;">
+                        <i class="fa-solid fa-paper-plane" style="margin-right: 0.5rem;"></i> Kirim Pesan
+                    </button>
+                </form>
+            </div>
+
+        </div>
+
+        <!-- Bar Informasi Kontak (Lokasi, Email) & Akun Sosial Media Terintegrasi -->
+        <div class="kontak-info-bar" style="display: flex; flex-wrap: wrap; gap: 1.5rem; justify-content: space-between; background: white; padding: 1.5rem 2rem; border-radius: 1rem; box-shadow: 0 4px 15px rgba(0,0,0,0.05); align-items: center; max-width: 1100px; margin-left: auto; margin-right: auto;">
+            
+            <!-- Bagian Kontak Fisik (Lokasi & Email) -->
+            <div style="display: flex; flex-wrap: wrap; gap: 2.5rem;">
+                <!-- Detail Lokasi Kantor -->
+                <div style="display: flex; align-items: center; gap: 0.75rem;">
+                    <div style="width: 2.5rem; height: 2.5rem; background: #e0f2fe; color: #0284c7; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.1rem; flex-shrink: 0;">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div>
+                        <span style="font-size: 0.75rem; color: #64748b; display: block; font-weight: bold; text-transform: uppercase; letter-spacing: 0.05em;">Kantor Pusat</span>
+                        <span style="font-size: 0.9rem; font-weight: 700; color: #0f172a;">Jl. Jenderal Sudirman No. 45, Jakarta</span>
+                    </div>
+                </div>
+
+                <!-- Detail Email Resmi -->
+                <div style="display: flex; align-items: center; gap: 0.75rem;">
+                    <div style="width: 2.5rem; height: 2.5rem; background: #e0f2fe; color: #0284c7; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.1rem; flex-shrink: 0;">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div>
+                        <span style="font-size: 0.75rem; color: #64748b; display: block; font-weight: bold; text-transform: uppercase; letter-spacing: 0.05em;">Email Resmi</span>
+                        <span style="font-size: 0.9rem; font-weight: 700; color: #0f172a;">support@busticket.id</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bagian Jejaring Sosial Media -->
+            <div style="display: flex; align-items: center; gap: 1rem;">
+                <span style="font-size: 0.85rem; font-weight: bold; color: #64748b;">Ikuti Kami:</span>
+                <div style="display: flex; gap: 0.75rem;">
+                    <!-- Instagram -->
+                    <a href="https://instagram.com" target="_blank" style="width: 2.5rem; height: 2.5rem; background-color: #f0f7ff; color: #0284c7; border-radius: 50%; display: flex; align-items: center; justify-content: center; transition: all 0.2s; text-decoration: none;">
+                        <i class="fa-brands fa-instagram" style="font-size: 1.1rem; color: #0284c7;"></i>
+                    </a>
+                    <!-- Facebook -->
+                    <a href="https://facebook.com" target="_blank" style="width: 2.5rem; height: 2.5rem; background-color: #f0f7ff; color: #0284c7; border-radius: 50%; display: flex; align-items: center; justify-content: center; transition: all 0.2s; text-decoration: none;">
+                        <i class="fa-brands fa-facebook-f" style="font-size: 1.1rem; color: #0284c7;"></i>
+                    </a>
+                    <!-- X / Twitter -->
+                    <a href="https://twitter.com" target="_blank" style="width: 2.5rem; height: 2.5rem; background-color: #f0f7ff; color: #0284c7; border-radius: 50%; display: flex; align-items: center; justify-content: center; transition: all 0.2s; text-decoration: none;">
+                        <i class="fa-brands fa-x-twitter" style="font-size: 1.1rem; color: #0284c7;"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+
+    <footer>
+        <p>&copy; 2026 BusTicket. Semua Hak Dilindungi.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

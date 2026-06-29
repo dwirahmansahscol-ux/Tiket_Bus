@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Kami - Tiket Bus </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo"><h2>Tiket Bus </h2></div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Beranda</a></li>
+                <li class="nav-item"><a href="tentang.html" class="nav-link active">Tentang</a></li>
+                <li class="nav-item"><a href="katalog.html" class="nav-link">Katalog</a></li>
+                <li class="nav-item"><a href="bayar.html" class="nav-link">Bayar</a></li>
+                <li class="nav-item"><a href="kontak.html" class="nav-link">Kontak</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+   
+   <main class="section">
+        <h1 style="font-size: 2rem; font-weight: 850; margin-bottom: 1.5rem;">Tentang Tiket Bus </h1>
+        
+        <!-- Wrapper utama untuk menyusun teks tentang kami dan gambar agar sejajar -->
+        <div class="tentang-container" style="display: flex; flex-wrap: wrap; gap: 2rem; align-items: stretch; margin-bottom: 2rem;">
+            
+            <!-- Bagian Kiri: Kartu Teks Profil -->
+            <div class="card" style="flex: 1.2; min-width: 320px; padding: 2rem; display: flex; flex-direction: column; justify-content: center; margin-top: 0;">
+                <h3 style="font-weight: 800; margin-bottom: 0.75rem;">Profil Perusahaan</h3>
+                <p style="color: #64748b; margin-bottom: 1.5rem; text-align: justify; line-height: 1.6;">
+                    BusTicket didirikan dengan misi mendigitalisasi transportasi darat di Indonesia. Kami bekerja sama dengan puluhan Perusahaan Otobus (PO) resmi untuk menyajikan tiket perjalanan terbaik, aman, tanpa perlu antre di terminal.
+                </p>
+                
+                <h3 style="font-weight: 800; margin-bottom: 0.75rem;">Visi & Misi</h3>
+                <p style="color: #64748b; text-align: justify; line-height: 1.6; margin-bottom: 0;">
+                    Menjadi platform andalan masyarakat Indonesia dalam bepergian menggunakan moda transportasi bus dengan mengutamakan efisiensi waktu dan kenyamanan pengguna.
+                </p>
+            </div>
+            
+            <!-- Bagian Kanan: Foto Armada Bus -->
+            <div class="logo-pt-box" style="flex: 0.8; min-width: 280px; display: flex; justify-content: center; align-items: center;">
+                <img src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1qg2Lk.img?w=768&h=717&m=6&x=120&y=120&s=280&d=280" 
+                     alt="[Foto Armada Bus PT]" 
+                     style="width: 100%; max-width: 400px; height: 100%; min-height: 280px; border-radius: 1.5rem; box-shadow: 0 10px 25px rgba(0,0,0,0.08); object-fit: cover;">
+            </div>
+            
+        </div>
+
+        <!-- BARU: Bar Informasi Kontak (Lokasi, Email) & Akun Sosial Media -->
+        <div class="kontak-info-bar" style="display: flex; flex-wrap: wrap; gap: 1.5rem; justify-content: space-between; background: white; padding: 1.5rem 2rem; border-radius: 1rem; box-shadow: 0 4px 15px rgba(0,0,0,0.05); align-items: center;">
+            
+            <!-- Bagian Kontak Fisik (Lokasi & Email) -->
+            <div style="display: flex; flex-wrap: wrap; gap: 2.5rem;">
+                
+                <!-- Detail Lokasi Kantor -->
+                <div style="display: flex; align-items: center; gap: 0.75rem;">
+                    <div style="width: 2.5rem; height: 2.5rem; background: #e0f2fe; color: #0284c7; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.1rem; flex-shrink: 0;">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div>
+                        <span style="font-size: 0.75rem; color: #64748b; display: block; font-weight: bold; text-transform: uppercase; letter-spacing: 0.05em;">Kantor Pusat</span>
+                        <span style="font-size: 0.9rem; font-weight: 700; color: #0f172a;">Jl. Jenderal Sudirman No. 45, Jakarta</span>
+                    </div>
+                </div>
+
+                <!-- Detail Email Resmi -->
+                <div style="display: flex; align-items: center; gap: 0.75rem;">
+                    <div style="width: 2.5rem; height: 2.5rem; background: #e0f2fe; color: #0284c7; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.1rem; flex-shrink: 0;">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div>
+                        <span style="font-size: 0.75rem; color: #64748b; display: block; font-weight: bold; text-transform: uppercase; letter-spacing: 0.05em;">Email Resmi</span>
+                        <span style="font-size: 0.9rem; font-weight: 700; color: #0f172a;">support@busticket.id</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bagian Jejaring Sosial Media -->
+            <div style="display: flex; align-items: center; gap: 1rem;">
+                <span style="font-size: 0.85rem; font-weight: bold; color: #64748b;">Ikuti Kami:</span>
+                <div style="display: flex; gap: 0.75rem;">
+                    <!-- Instagram -->
+                    <a href="https://instagram.com" target="_blank" style="width: 2.5rem; height: 2.5rem; background-color: #f0f7ff; color: #0284c7; border-radius: 50%; display: flex; align-items: center; justify-content: center; transition: all 0.2s; text-decoration: none;">
+                        <i class="fa-brands fa-instagram" style="font-size: 1.1rem; color: #0284c7;"></i>
+                    </a>
+                    <!-- Facebook -->
+                    <a href="https://facebook.com" target="_blank" style="width: 2.5rem; height: 2.5rem; background-color: #f0f7ff; color: #0284c7; border-radius: 50%; display: flex; align-items: center; justify-content: center; transition: all 0.2s; text-decoration: none;">
+                        <i class="fa-brands fa-facebook-f" style="font-size: 1.1rem; color: #0284c7;"></i>
+                    </a>
+                    <!-- X / Twitter -->
+                    <a href="https://twitter.com" target="_blank" style="width: 2.5rem; height: 2.5rem; background-color: #f0f7ff; color: #0284c7; border-radius: 50%; display: flex; align-items: center; justify-content: center; transition: all 0.2s; text-decoration: none;">
+                        <i class="fa-brands fa-x-twitter" style="font-size: 1.1rem; color: #0284c7;"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2026 BusTicket. Semua Hak Dilindungi.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,204 @@
+/* ==========================================================================
+   RESET & VARIABLE GLOBAL
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+    --primary-color: #0275d8;
+    --secondary-color: #f7f7f7;
+    --dark-color: #292b2c;
+    --light-color: #ffffff;
+    --success-color: #5cb85c;
+}
+
+body {
+    background-color: var(--secondary-color);
+    color: var(--dark-color);
+    line-height: 1.6;
+}
+
+a {
+
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ==========================================================================
+   HEADER & NAVBAR (RESPONSIVE MOBILE-FIRST)
+   ========================================================================== */
+header {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+}
+
+.logo h2 {
+    font-weight: 700;
+}
+
+.nav-menu {
+    display: none; /* Sembunyikan menu default di mobile */
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--primary-color);
+    text-align: center;
+    box-shadow: 0 4px 5px rgba(0,0,0,0.1);
+}
+
+.nav-menu.active {
+    display: flex; /* Munculkan saat tombol hamburger diklik */
+}
+
+.nav-item {
+    padding: 1.5rem 0;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.nav-item a:hover, .nav-item a.active {
+    color: #ffc107;
+    font-weight: bold;
+}
+
+/* Hamburger Menu Icon */
+.hamburger {
+    display: block;
+    cursor: pointer;
+}
+
+.hamburger .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background-color: var(--light-color);
+}
+
+/* ==========================================================================
+   LAYOUT UTAMA & KONTEN
+   ========================================================================== */
+main {
+    padding: 2rem 5%;
+    min-height: 80vh;
+}
+
+.hero {
+    text-align: center;
+    padding: 6rem 1rem; /* Padding diperbesar agar banner lebih tinggi dan foto makin kelihatan */
+    background:  url('https://sma11jogja.sch.id/wp-content/uploads/2025/11/Sewa-Bus-Pariwisata-Jogja-Nuswantoro-Grup.webp') no-repeat center center/cover;
+    color: rgb(245, 176, 37);
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--success-color);
+    color: white;
+    padding: 0.7rem 1.5rem;
+    border-radius: 5px;
+    margin-top: 1rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.btn:hover {
+    background-color: #4cae4c;
+}
+
+/* Grid untuk Katalog */
+.grid-katalog {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+/* Form Styling (Bayar & Kontak) */
+.form-group {
+    margin-bottom: 1.2rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.form-group input, .form-group select, .form-group textarea {
+    width: 100%;
+    padding: 0.7rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+footer {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    text-align: center;
+    padding: 1.5rem 1rem;
+    margin-top: 2rem;
+}
+
+/* ==========================================================================
+   MEDIA QUERIES (LAYAR LEBAR / DESKTOP) Min-width: 768px
+   ========================================================================== */
+@media (min-width: 768px) {
+    .hamburger {
+        display: none; /* Sembunyikan hamburger di desktop */
+    }
+
+    .nav-menu {
+        display: flex; /* Tampilkan menu horizontal */
+        flex-direction: row;
+        position: static;
+        width: auto;
+        box-shadow: none;
+    }
+
+    .nav-item {
+        padding: 0 1.5rem;
+        border-bottom: none;
+    }
+
+    .grid-katalog {
+        grid-template-columns: repeat(3, 1fr); /* 3 Kolom di desktop */
+    }
+    
+    .form-container {
+        max-width: 600px;
+        margin: 0 auto;
+        background: white;
+        padding: 2rem;
+        border-radius: 8px;
+    }
+}

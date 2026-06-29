@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katalog Armada - Tiket Bus </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo"><h2>Tiket Bus </h2></div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Beranda</a></li>
+                <li class="nav-item"><a href="tentang.html" class="nav-link">Tentang</a></li>
+                <li class="nav-item"><a href="katalog.html" class="nav-link active">Katalog</a></li>
+                <li class="nav-item"><a href="bayar.html" class="nav-link">Bayar</a></li>
+                <li class="nav-item"><a href="kontak.html" class="nav-link">Kontak</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1 style="font-size: 2rem; font-weight: 850; margin-bottom: 0.5rem;">Pilihan Rute & Armada Bus</h1>
+        <p style="color: var(--slate-gray); margin-bottom: 2rem;">Silakan pilih rute perjalanan yang Anda butuhkan.</p>
+
+        <!-- Container Grid Katalog (Otomatis membagi 3 kolom di layar besar) -->
+        <div class="grid-katalog">
+            
+            <!-- KARTU 1: VIP. Blitang - Jakarta - Bandung -->
+            <div class="card" style="padding: 0; overflow: hidden; display: flex; flex-direction: column;">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQKFlZPsjJAy5dhjPHgFSmh1pKLuUHkMAl9c-yJSb-RQ&s=10" 
+                     alt="[Gambar Bus Jakarta Bandung]" 
+                     style="width: 100%; height: 180px; object-fit: cover;">
+                
+                <div style="padding: 1.5rem; display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                    <div>
+                        <h3 style="font-weight: 800; margin-bottom: 0.5rem;">VIP. Blitang - Jakarta - Bandung</h3>
+                        <p style="margin-bottom: 0.25rem;"><strong>PO. Jaya Mandiri</strong> (Executive Class)</p>
+                        <p style="color: #64748b; font-size: 0.85rem; line-height: 1.4;">Fasilitas: AC, Wi-Fi, Snack, Reclining Seat</p>
+                    </div>
+                    <div style="margin-top: 1.5rem;">
+                        <p style="color: var(--primary-color); font-weight: 800; font-size: 1.25rem; margin-bottom: 0.75rem;">Rp 1.000.000</p>
+                        <a href="bayar.html" class="btn" style="width: 100%; text-align: center; display: block; background-color: var(--success-color); color: white; padding: 0.75rem; border-radius: 6px; text-decoration: none; font-weight: bold;">Pesan Sekarang</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- KARTU 2: VIP. Blitang - jkarta - Yogyakarta -->
+            <div class="card" style="padding: 0; overflow: hidden; display: flex; flex-direction: column;">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpLC31zegEoapc1Wl6-Rg-qHLtanIeDbedQQ09G1mD1g&s=10" 
+                     alt="[Gambar Bus Jakarta Yogyakarta]" 
+                     style="width: 100%; height: 180px; object-fit: cover;">
+                
+                <div style="padding: 1.5rem; display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                    <div>
+                        <h3 style="font-weight: 800; margin-bottom: 0.5rem;">VIP. Blitang - jkarta - Yogyakarta </h3>
+                        <p style="margin-bottom: 0.25rem;"><strong>PO. Putra Bangsa</strong> (Super Executive)</p>
+                        <p style="color: #64748b; font-size: 0.85rem; line-height: 1.4;">Fasilitas: AC, Leg Rest, Toilet, Makan Malam</p>
+                    </div>
+                    <div style="margin-top: 1.5rem;">
+                        <p style="color: var(--primary-color); font-weight: 800; font-size: 1.25rem; margin-bottom: 0.75rem;">Rp 1.250.000</p>
+                        <a href="bayar.html" class="btn" style="width: 100%; text-align: center; display: block; background-color: var(--success-color); color: white; padding: 0.75rem; border-radius: 6px; text-decoration: none; font-weight: bold;">Pesan Sekarang</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- KARTU 3: VIP. Blitang - jkarta -Surabaya - Bali -->
+            <div class="card" style="padding: 0; overflow: hidden; display: flex; flex-direction: column;">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTibILWISJv_bTOE3_wOqSRNNGiSdyNWpUbqYye-cM1UQ&s=10" 
+                     alt="[Gambar Bus Surabaya Bali]" 
+                     style="width: 100%; height: 180px; object-fit: cover;">
+                
+                <div style="padding: 1.5rem; display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                    <div>
+                        <h3 style="font-weight: 800; margin-bottom: 0.5rem;">VIP. Blitang - jkarta -Surabaya - Bali </h3>
+                        <p style="margin-bottom: 0.25rem;"><strong>PO. Lintas Samudra</strong> (Sleeper Bus)</p>
+                        <p style="color: #64748b; font-size: 0.85rem; line-height: 1.4;">Fasilitas: Bed Seat, Personal TV, Full AC, Makan</p>
+                    </div>
+                    <div style="margin-top: 1.5rem;">
+                        <p style="color: var(--primary-color); font-weight: 800; font-size: 1.25rem; margin-bottom: 0.75rem;">Rp 1.800.000</p>
+                        <a href="bayar.html" class="btn" style="width: 100%; text-align: center; display: block; background-color: var(--success-color); color: white; padding: 0.75rem; border-radius: 6px; text-decoration: none; font-weight: bold;">Pesan Sekarang</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- KARTU 4: PAS.  Blitang - Jakarta - Bandung-->
+            <div class="card" style="padding: 0; overflow: hidden; display: flex; flex-direction: column;">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGc7Orlge74CjWGt1p1egKr9QmuN3jKTs2-U8vVSJQ0A&s=10" 
+                     alt="[Gambar Bus Bandung Yogyakarta]" 
+                     style="width: 100%; height: 180px; object-fit: cover;">
+                
+                <div style="padding: 1.5rem; display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                    <div>
+                        <h3 style="font-weight: 800; margin-bottom: 0.5rem;">PAS.  Blitang - Jakarta - Bandung </h3>
+                        <p style="margin-bottom: 0.25rem;"><strong>PO. Priangan Raya</strong> (Super Executive)</p>
+                        <p style="color: #64748b; font-size: 0.85rem; line-height: 1.4;">Fasilitas: Suspensi Udara, USB Charger, Toilet, Selimut, Makan Malam</p>
+                    </div>
+                    <div style="margin-top: 1.5rem;">
+                        <p style="color: var(--primary-color); font-weight: 800; font-size: 1.25rem; margin-bottom: 0.75rem;">Rp 800.000</p>
+                        <a href="bayar.html" class="btn" style="width: 100%; text-align: center; display: block; background-color: var(--success-color); color: white; padding: 0.75rem; border-radius: 6px; text-decoration: none; font-weight: bold;">Pesan Sekarang</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- KARTU 5: PAS.  Blitang - Jakarta - Yogyakarta -->
+            <div class="card" style="padding: 0; overflow: hidden; display: flex; flex-direction: column;">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ25CmiABTAfYUvNilpKxBDa_5UD1kIX8bvrQwkdVkQvQ&s=10" 
+                     alt="[Gambar Bus Jakarta Surabaya]" 
+                     style="width: 100%; height: 180px; object-fit: cover;">
+                
+                <div style="padding: 1.5rem; display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                    <div>
+                        <h3 style="font-weight: 800; margin-bottom: 0.5rem;">PAS.  Blitang - Jakarta - Yogyakarta</h3>
+                        <p style="margin-bottom: 0.25rem;"><strong>PO. Nusantara Express</strong> (Sleeper Bus)</p>
+                        <p style="color: #64748b; font-size: 0.85rem; line-height: 1.4;">Fasilitas: Bed Cabin, Personal TV, Air Purifier, Bantal, Selimut, Makan Malam</p>
+                    </div>
+                    <div style="margin-top: 1.5rem;">
+                        <p style="color: var(--primary-color); font-weight: 800; font-size: 1.25rem; margin-bottom: 0.75rem;">Rp 900.000</p>
+                        <a href="bayar.html" class="btn" style="width: 100%; text-align: center; display: block; background-color: var(--success-color); color: white; padding: 0.75rem; border-radius: 6px; text-decoration: none; font-weight: bold;">Pesan Sekarang</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- KARTU 6 :PAS.  Blitang -Jakarta - yogyakarta - bandung -->
+            <div class="card" style="padding: 0; overflow: hidden; display: flex; flex-direction: column;">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLfVMmu5JWo2SQXVJ4iIi_sf6ItzR1mEi7QKsBR-GNTA&s=10" 
+                     alt="[Gambar Bus Bandung Bali]" 
+                     style="width: 100%; height: 180px; object-fit: cover;">
+                
+                <div style="padding: 1.5rem; display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                    <div>
+                        <h3 style="font-weight: 800; margin-bottom: 0.5rem;">PAS.  Blitang -Jakarta - yogyakarta - bandung  </h3>
+                        <p style="margin-bottom: 0.25rem;"><strong>PO. Priangan Express</strong> (Sleeper Bus)</p>
+                        <p style="color: #64748b; font-size: 0.85rem; line-height: 1.4;">Fasilitas: Bed Cabin, TV Media, Full AC, Selimut, Makan Malam Prasmanan</p>
+                    </div>
+                    <div style="margin-top: 1.5rem;">
+                        <p style="color: var(--primary-color); font-weight: 800; font-size: 1.25rem; margin-bottom: 0.75rem;">Rp 1.000.000</p>
+                        <a href="bayar.html" class="btn" style="width: 100%; text-align: center; display: block; background-color: var(--success-color); color: white; padding: 0.75rem; border-radius: 6px; text-decoration: none; font-weight: bold;">Pesan Sekarang</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- KARTU 7: HEMAT. Blitang -Jakarta - Bandung -->
+            <div class="card" style="padding: 0; overflow: hidden; display: flex; flex-direction: column;">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMMs8MmYLXBZwMpZ7vJxdEg_RmeF5yWAzrvwV-GFcYw&s=10" 
+                     alt="[Gambar Bus Surabaya Yogyakarta]" 
+                     style="width: 100%; height: 180px; object-fit: cover;">
+                
+                <div style="padding: 1.5rem; display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                    <div>
+                        <h3 style="font-weight: 800; margin-bottom: 0.5rem;">HEMAT. Blitang -Jakarta - Bandung </h3>
+                        <p style="margin-bottom: 0.25rem;"><strong>PO. Putra Trans</strong> (Super Executive)</p>
+                        <p style="color: #64748b; font-size: 0.85rem; line-height: 1.4;">Fasilitas: AC, Leg Rest Premium, Snack Box, Reclining Seat</p>
+                    </div>
+                    <div style="margin-top: 1.5rem;">
+                        <p style="color: var(--primary-color); font-weight: 800; font-size: 1.25rem; margin-bottom: 0.75rem;">Rp 200.000</p>
+                        <a href="bayar.html" class="btn" style="width: 100%; text-align: center; display: block; background-color: var(--success-color); color: white; padding: 0.75rem; border-radius: 6px; text-decoration: none; font-weight: bold;">Pesan Sekarang</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- KARTU 8: HEMAT. Blitang -Jakarta - Yogyakarta  -->
+            <div class="card" style="padding: 0; overflow: hidden; display: flex; flex-direction: column;">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3uqDg3rzkVkcA0LYQ6DfbvlY8AZNyOBpJfN2NBFBuKQ&s=10" 
+                     alt="[Gambar Bus Jakarta Solo]" 
+                     style="width: 100%; height: 180px; object-fit: cover;">
+                
+                <div style="padding: 1.5rem; display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                    <div>
+                        <h3 style="font-weight: 800; margin-bottom: 0.5rem;">HEMAT. Blitang -Jakarta - Yogyakarta </h3>
+                        <p style="margin-bottom: 0.25rem;"><strong>PO. Gajah Mada</strong> (Executive Class)</p>
+                        <p style="color: #64748b; font-size: 0.85rem; line-height: 1.4;">Fasilitas: AC, Wi-Fi Cepat, Toilet Bersih, Makan Malam Prasmanan</p>
+                    </div>
+                    <div style="margin-top: 1.5rem;">
+                        <p style="color: var(--primary-color); font-weight: 800; font-size: 1.25rem; margin-bottom: 0.75rem;">Rp 400.000</p>
+                        <a href="bayar.html" class="btn" style="width: 100%; text-align: center; display: block; background-color: var(--success-color); color: white; padding: 0.75rem; border-radius: 6px; text-decoration: none; font-weight: bold;">Pesan Sekarang</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- KARTU 9: HEMAT. Jakarta - yogyakarta - bandung -->
+            <div class="card" style="padding: 0; overflow: hidden; display: flex; flex-direction: column;">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQObAIveFkzz8WhBzwNsWjoSyKB99gXnjZC3VdAD1T7w&s" 
+                     alt="[Gambar Bus Bandung Surabaya]" 
+                     style="width: 100%; height: 180px; object-fit: cover;">
+                
+                <div style="padding: 1.5rem; display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                    <div>
+                        <h3 style="font-weight: 800; margin-bottom: 0.5rem;">HEMAT. Jakarta - yogyakarta - bandung </h3>
+                        <p style="margin-bottom: 0.25rem;"><strong>PO. Parahyangan Express</strong> (Super Executive)</p>
+                        <p style="color: #64748b; font-size: 0.85rem; line-height: 1.4;">Fasilitas: AC, Leg Rest, Charger Port di Setiap Kursi, Toilet, Snack</p>
+                    </div>
+                    <div style="margin-top: 1.5rem;">
+                        <p style="color: var(--primary-color); font-weight: 800; font-size: 1.25rem; margin-bottom: 0.75rem;">Rp 450.000</p>
+                        <a href="bayar.html" class="btn" style="width: 100%; text-align: center; display: block; background-color: var(--success-color); color: white; padding: 0.75rem; border-radius: 6px; text-decoration: none; font-weight: bold;">Pesan Sekarang</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 BusTicket. Semua Hak Dilindungi.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
